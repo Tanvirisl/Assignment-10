@@ -1,0 +1,34 @@
+.login-main-container{
+    background-color: rgba(250, 128, 114, 0.241);
+    width: 400px;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 50px;
+    padding: 50px 20px;
+}
+.login-main-container input{
+    width: 100%;
+    padding:10px;
+    border-radius: 10px;
+    border: none;
+}
+.login-main-container button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 128, 0, 0.804);
+    font-weight: 600;
+    color: white;
+}
+.login-main-container h6{
+    cursor: pointer;
+    background-color:rgba(250, 128, 114, 0.511);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+.title{
+    margin-bottom: 10px;
+    font-weight: 700;
+}

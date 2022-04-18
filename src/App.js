@@ -7,6 +7,7 @@ import Header from './Home/Header/Header';
 import Home from './Home/Home/Home';
 import Signup from './Home/Signup/Signup';
 import Login from './Login/Login';
+import NotFound from './NotFound/NotFound';
 import RequireAuth from './RequireAuth/RequireAuth';
 import ServiceDetail from './ServiceDetail/ServiceDetail';
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       
     </div>

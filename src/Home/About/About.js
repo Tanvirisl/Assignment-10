@@ -11,7 +11,7 @@ const About = () => {
             <div className='horizontal'></div>
 
             <div>
-                <h1>My Goals: WebDeveloper</h1>
+                <h1>My Goals: Professional WebDeveloper and Create Big Affiliate Website</h1>
             </div>
         </div>
     );

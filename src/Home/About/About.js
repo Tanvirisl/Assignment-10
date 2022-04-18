@@ -8,6 +8,11 @@ const About = () => {
             <img src={myImage} alt="" />
             <h2>Number:01728XXXXXX</h2>
             <h2>Email: <small>himonxxxxxxx@gmail.com</small></h2>
+            <div className='horizontal'></div>
+
+            <div>
+                <h1>My Goals: WebDeveloper</h1>
+            </div>
         </div>
     );
 };

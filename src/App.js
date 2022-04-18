@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Home/About/About';
+import Footer from './Home/Footer/Footer';
 import Header from './Home/Header/Header';
 import Home from './Home/Home/Home';
 import Signup from './Home/Signup/Signup';
@@ -20,6 +21,7 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
       </Routes>
+      {/* <Footer></Footer> */}
     </div>
   );
 }

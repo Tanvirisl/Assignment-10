@@ -1,0 +1,30 @@
+.service-container img {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.service-container {
+    border: 1px solid rgba(201, 200, 200, 0.696);
+    width: 360px;
+    border-radius: 10px;
+}
+
+.service-container-details button {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: serif;
+}
+@media only screen and (max-width:570px) {
+    .service-container img{
+        width: 100%;
+    }
+    .service-container{
+        width: 100%;
+    }
+}

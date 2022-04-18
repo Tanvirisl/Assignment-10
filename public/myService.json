@@ -1,0 +1,20 @@
+[
+    {
+        "id":"1",
+        "image":"https://thefinancialexpress.com.bd/uploads/1626870605.jpg",
+        "name":"Wall Painting",
+        "details":"i am wall painter."
+    },
+    {
+        "id":"2",
+        "name":"Banner Painting",
+        "image":"https://thumbs.dreamstime.com/z/billboard-poster-man-pasting-onto-blank-area-your-own-message-e-p-s-vector-file-included-image-isolated-white-70494118.jpg",
+        "details":""
+    },
+    {
+        "id":"3",
+        "name":"Village Drawing",
+        "image":"https://media.gettyimages.com/photos/outsider-art-style-fantasy-village-landscape-illustration-oil-pastel-picture-id1334887444?s=2048x2048",
+        "details":""
+    }
+]

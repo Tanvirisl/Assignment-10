@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Login.css'
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -54,7 +54,7 @@ const Login = () => {
 
     const handleLoginSubmit = (event) => {
         event.preventDefault();
-        signInWithEmailAndPassword(info.email, info.password)
+        signInWithEmailAndPassword(info.email, info.password);
     }
 
     useEffect(() => {
@@ -83,6 +83,12 @@ const Login = () => {
             navigate(from, { replace: true })
         }
     }, [user])
+
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+    const resetPassword = async() => {
+        await sendPasswordResetEmail(info.email);
+        toast('Send Your Email')
+    }
     return (
         <div className='login-main-container'>
             <div className='title'>LogIn</div>
@@ -97,6 +103,7 @@ const Login = () => {
 
             <SocialLogin></SocialLogin>
             <h6 onClick={navigateRegister}>Please Register</h6>
+            <p>Forget Password <span style={{ cursor: "pointer" }} className='text-primary' onClick={resetPassword}>Reset Password</span></p>
 
         </div>
     );

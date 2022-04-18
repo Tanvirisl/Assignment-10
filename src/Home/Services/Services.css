@@ -11,7 +11,7 @@
 .service-main-container h2{
     margin-top: 30px;
     margin-bottom: 30px;
-    color: sandybrown;
+    color: rgba(250, 128, 114, 0.818);
 }
 @media only screen and (max-width:570px) {
     .services-container{
